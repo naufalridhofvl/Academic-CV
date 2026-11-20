@@ -39,9 +39,9 @@ in HTML, CSS, Python, and digital humanities tools.
 ## Project Structure
 
     My-CV/
-    ├── Academic_CV.html
-    ├── style.css
-    └── README.md
+    - Academic_CV.html
+    - style.css
+    - README.md
 
 ## How to Run
 
