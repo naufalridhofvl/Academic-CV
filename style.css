@@ -1,0 +1,168 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    padding: 25px;
+    background-color: #e9e9e9;
+    font-family: times, sans-serif;
+    color: #111;
+    font-size: 11pt;
+    line-height: 1.25;
+}
+
+/* A4 RESUME */
+.resume {
+    width: 210mm;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 17mm 18mm;
+    background-color: white;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12)
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+header h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0 0 6px;
+    letter-spacing: 0.4px;
+}
+
+header p {
+    margin: 3px 0;
+    font-size: 11pt;
+}
+
+.links{
+    overflow-wrap: anywhere;
+}
+
+/* LINKS */
+a {
+    color: #263dd2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* SECTION */
+section {
+    margin-bottom: 14px;
+}
+
+section h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 0 0 7px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+}
+
+section p {
+    margin: 0 0 5px;
+    text-align: justify;
+}
+
+/* EXPERIENCE / EDUCATION */
+.entry {
+    margin-bottom: 9px;
+}
+
+.entry-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.entry-heading strong {
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+.entry-heading span {
+    font-size: 9pt;
+    white-space: nowrap;
+    text-align: right;
+}
+
+/* BULLET LISTS */
+ul {
+    margin: 4px 0 7px;
+    padding-left: 19px;
+}
+
+li {
+    margin-bottom: 3px;
+    padding-left: 1px;
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+
+    .resume {
+        padding: 20px;
+    }
+
+    .entry-heading {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .entry-heading span {
+        white-space: normal;
+        text-align: left;
+    }
+}
+
+/* PRINT / PDF */
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    body {
+        background: white;
+        margin: 0;
+        padding: 0;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .resume {
+        width: 210mm;
+        max-width: none;
+        padding: 17mm 18mm;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .entry {
+        break-inside: avoid;
+    }
+
+    h2 {
+        break-after: avoid;
+    }
+
+    a {
+        color: #111;
+    }
+}
