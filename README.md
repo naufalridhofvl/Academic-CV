@@ -1,3 +1,8 @@
+#UPDATE!
+1. Use the index.html file for the updated format
+2. download button has been added
+
+
 # Academic-CV
 This is a free template of academic CV that you may use.
 
