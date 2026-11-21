@@ -49,6 +49,7 @@ in HTML, CSS, Python, and digital humanities tools.
 2. Open the project folder in VS Code.
 3. Open `Academic_CV.html` in a web browser.
 4. Explore the CV.
+5. To download the cv, you can press `cmd + p or control + p` on your browser after.
 
 No additional libraries or installations
 are required.
